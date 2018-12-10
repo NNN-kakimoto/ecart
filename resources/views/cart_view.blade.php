@@ -5,6 +5,10 @@
 @section('content')
 <main role="main-inner-wrapper" class="container">
 	<div class="cart_items">
+		<form action="/order/delete_all" class="clear_form" method="POST">
+			{{csrf_field()}}
+			<input type="submit" class="btn btn-danger clear_cart" value="CLEAR CART">
+		</form>
 		@if(count($cart) > 0)
 			@foreach($cart as $index => $item)
 				<div class="cart_row">
@@ -25,11 +29,10 @@
 					</form>
 				</div>
 			@endforeach
+		@else
+			<p>no item your cart yet.</p>
 		@endif
-		<form action="/order/delete_all" class="clear_form" method="POST">
-			{{csrf_field()}}
-			<input type="submit" class="btn btn-danger clear_cart" value="CLEAR CART">
-		</form>
+		<a href="/" class="btn btn-success continue">CONTINUE SHOPING</a>
 	</div>
 
 	<div class="cart_detail" >

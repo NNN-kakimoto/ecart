@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-		Session::getId();
-    return view('index');
-});
+Route::get('/','ProductsController@index');
 
 Route::get('/product/{id?}','ProductsController@show');
 //Route::post('/post_cart', 'ProductsController@store');

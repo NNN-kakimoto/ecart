@@ -27,33 +27,22 @@
 		</section>
 
 		<div class="clearfix"></div>
-		<section class="tile_view_outer">
-				<div class="tile_view_content">
-					<figure class="effect-oscar">
-						<img src="images/home-images/image-2.jpg" alt="" class="img-responsive"/>
-							<div class="index_ditals">
-								<h2>Studio Thonik <span>Exhibition</span></h2>
-								<p>Project for Thonik, design studio based in Amsterdam</p>
-								<a href="works-details.html">View more</a>
-							</div>
-					</figure>
+		<div class="grid_outer">
+			<div class="grid">
+				<div class="text">
+					<h2>All Items...</h2>
 				</div>
-				<a href="/product/1">test</a>
-
-				@for($i = 0; $i< 5; $i++)
-					<div class="tile_view_content">
-						<figure class="effect-oscar">
-							<img src="images/home-images/image-3.jpg" alt="" class="img-responsive"/>
-							<div class="index_ditals">
-								<h2>{{$i}} <span>Exhibition</span></h2>
-								<p>Project for Thonik, design studio based in Amsterdam</p>
-								<a href="works-details.html">View more</a>
-							</div>
-						</figure>
+			</div>
+			@foreach($products as $idx => $product)
+				<a href="/product/{{$product->id}}" class="grid">
+					<div class="pic {{$idx%2==0? 'clara' : 'karen'}}">
+						<h2>{{$product->name}}</h2>
+						<img src="{{$product->top_image_url}}">
+						<p>{{$product->price}}JPY</p>
 					</div>
-				@endfor
-		</section>
-		<div class="clearfix"></div>
+				</a>
+			@endforeach
+		</div>
 	</div>
 </main>
 @endsection

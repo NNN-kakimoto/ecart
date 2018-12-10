@@ -16,7 +16,7 @@
 					<div class="product_details">
 						<div class="row">
 							<div class="col-xs-4 product_price_head">Price</div>
-							<div class="col-xs-8 product_price">{{$product->price}}<span class="unit_jpy">JPY</span></span></div>
+							<div class="col-xs-8 product_price">{{number_format($product->price)}}<span class="unit_jpy">JPY</span></span></div>
 						</div>
 						<p>select your quantity...</p>
 						<select name="quantity" class="select_qty">
@@ -34,7 +34,7 @@
 		</section>
 		<section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 			<div class="about-content">
-				<img src="{{$product->top_image_url}}" alt="">
+				<img class="about_image" src="{{$product->top_image_url}}" alt="">
 			</div>
 		</section>
 		<div class="clearfix"></div>

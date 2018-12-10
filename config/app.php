@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
+    'shipping_fee' => 1000,
     'name' => env('APP_NAME', 'Laravel'),
 
     /*

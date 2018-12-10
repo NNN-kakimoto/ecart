@@ -231,33 +231,33 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="ma
 
 /*===== footer ===*/
 
-footer[role="footer"]{ background-color:#FFF; padding-top:100px; padding-bottom:77px}
+footer{ background-color:#FFF; padding-top:100px; padding-bottom:77px}
 
-footer[role="footer"] > h2 a{ margin:0 auto; display:block; max-width:66px; font-size: 38px; text-decoration: none; color: #757575;}
-footer[role="footer"] > h2 a:hover, footer[role="footer"] > h2 a:visited{
+footer > h2 a{ margin:0 auto; display:block; max-width:66px; font-size: 38px; text-decoration: none; color: #757575;}
+footer > h2 a:hover, footer > h2 a:visited{
 	text-decoration: none;
 	color: #757575;
 }
 
-footer[role="footer"] nav{ padding-top:37px; padding-bottom:43px}
+footer nav{ padding-top:37px; padding-bottom:43px}
 
-footer[role="footer"] nav > ul{ text-align:center; padding:0; margin:0}
+footer nav > ul{ text-align:center; padding:0; margin:0}
 
-footer[role="footer"] nav > ul > li{ display: inline-block; text-transform:uppercase; font-size:15px; margin:0 13px}
+footer nav > ul > li{ display: inline-block; text-transform:uppercase; font-size:15px; margin:0 13px}
 
-footer[role="footer"] nav > ul > li > a{ color:#9d9d9d}
+footer nav > ul > li > a{ color:#9d9d9d}
 
-footer[role="footer"] nav > ul > li:hover a{ text-decoration:none; color:#fb5353}
+footer nav > ul > li:hover a{ text-decoration:none; color:#fb5353}
 
-footer[role="footer"] ul[role="social-icons"]{ padding:0; margin:0; text-align:center; padding-bottom:40px;}
+footer ul[role="social-icons"]{ padding:0; margin:0; text-align:center; padding-bottom:40px;}
 
-footer[role="footer"] ul[role="social-icons"] > li{ display: inline-block; margin:0 6.5px}
+footer ul[role="social-icons"] > li{ display: inline-block; margin:0 6.5px}
 
-footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#bbbbbb; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
+footer ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#bbbbbb; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
 
-footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#fb5353}
+footer ul[role="social-icons"] > li:hover a{ background-color:#fb5353}
 
-footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#9c9c9c}
+footer .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#9c9c9c}
 
 /*===== About ===*/
 
